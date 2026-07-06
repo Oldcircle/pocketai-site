@@ -24,32 +24,32 @@ a{color:var(--accent)}
 <div class="wrap">
 <header>
 <h1>Privacy Policy — PocketAI</h1>
-<div class="tag">Last updated: July 5, 2026</div>
+<div class="tag">Last updated: July 6, 2026</div>
 </header>
 
-<div class="callout">PocketAI has no account system and no servers of its own. It does not collect, transmit to us, or sell any of your data. Your conversations travel directly between your iPhone and your own Mac.</div>
+<div class="callout">PocketAI has no account system and stores none of your data. Your conversations live on your own Mac; the relay that connects your iPhone to your Mac only forwards encrypted traffic and keeps no copy of it.</div>
 
 <h2>The short version</h2>
-<p>PocketAI is a client app that lets you use a coding agent running on your own Mac. There is no PocketAI backend and no PocketAI account. We never receive your messages, your files, or any usage data.</p>
+<p>PocketAI is a client app that lets you use a coding agent running on your own Mac. There is no PocketAI account and no PocketAI database. Your conversations and files are stored only on your devices — we never store, log, analyze, or sell them.</p>
 
 <h2>What we collect</h2>
-<p><strong>Nothing.</strong> PocketAI has no login, no user profiles, and no server operated by us. We do not receive your prompts, the agent's replies, your file contents, or metadata about your sessions.</p>
+<p><strong>No content, no analytics.</strong> PocketAI has no login and no user profiles. We do not store your prompts, the agent's replies, or your file contents. The connection relay we operate (see below) handles only transient routing information (a random device identifier and connection timestamps) needed to link your phone to your Mac.</p>
 
 <h2>How your data moves</h2>
 <ul>
 <li>PocketAI connects to a companion service that <em>you</em> run on <em>your</em> Mac.</li>
-<li>The connection is made directly to your Mac over an encrypted (TLS) link — typically a secure tunnel that your Mac opens, or your local network. It does not pass through any PocketAI server.</li>
+<li>By default the connection goes through a relay we operate, over TLS-encrypted links. The relay is a pass-through: it forwards traffic between your phone and your Mac and does not store, log, or inspect your conversation content. On the same network, the app can also connect to your Mac directly without the relay.</li>
 <li>Connection details you enter (your Mac's address and an access token) are stored only in the iOS Keychain on your device.</li>
 <li>Conversation history is stored on your Mac by the companion service, not by us. Deleting a session removes it there.</li>
 </ul>
 
 <h2>Analytics &amp; tracking</h2>
-<p>PocketAI contains no third-party analytics, advertising, or tracking SDKs. We use no cookies, no device identifiers, and no tracking technology. We cannot see how you use the app. A PrivacyInfo.xcprivacy manifest declaring "Data Not Collected" is bundled with the app.</p>
+<p>PocketAI contains no third-party analytics, advertising, or tracking SDKs. We use no cookies, no advertising identifiers, and no tracking technology. We cannot see how you use the app. A PrivacyInfo.xcprivacy manifest declaring "Data Not Collected" is bundled with the app.</p>
 
 <h2>Permissions the app requests</h2>
 <ul>
 <li><strong>Camera</strong> — only to scan a pairing QR code to add your Mac. No images are stored or sent.</li>
-<li><strong>Microphone &amp; Speech Recognition</strong> — only for optional voice-to-text in the composer. Transcription uses Apple's on-device recognition where available; PocketAI does not upload your audio.</li>
+<li><strong>Microphone &amp; Speech Recognition</strong> — only for optional voice-to-text in the composer. Transcription is performed by Apple's Speech framework, which may use Apple's servers to improve accuracy for mixed-language speech; PocketAI itself never receives, stores, or uploads your audio.</li>
 <li><strong>Photos</strong> — only when you choose to attach an image to send to your agent. Images go directly to your Mac, not to us.</li>
 <li><strong>Local Network</strong> — only to reach your Mac's companion service when you connect over the same network.</li>
 </ul>
@@ -64,7 +64,7 @@ a{color:var(--accent)}
 <p>If this policy changes, we will update the date above and post the revised version at this URL.</p>
 
 <h2>Contact</h2>
-<p>Questions about privacy? Email <a href="mailto:support@pocketai.app">support@pocketai.app</a>.</p>
+<p>Questions about privacy? Email <a href="mailto:pocketai1@outlook.com">pocketai1@outlook.com</a>.</p>
 
 <footer>PocketAI is an independent developer tool. It is a client for coding agents that run on your own computer and is not affiliated with any third-party agent or model provider.</footer>
 </div>
